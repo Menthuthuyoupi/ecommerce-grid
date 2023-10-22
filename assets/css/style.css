@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.grid-container{
+    display:grid;
+    grid-template-areas:
+    "header header"
+    "menu main"
+    "footer footer"
+    ;
+}
+
+header{
+    grid-area: header;
+    display:flex;
+    justify-content: space-between;
+    padding:10px 0px;
+}
+
+menu{
+    grid-area: menu;
+    padding:15px 20px 5px 10px;
+
+}
+
+main{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    box-sizing: border-box;
+    gap: 10px;
+    padding:15px;
+}
+
+footer{
+    grid-area: footer;
+    text-align: center;
+    padding:10px 0px;
+}
+
+header h2{
+    color:white;
+    font-weight: 700;
+}
+
+nav{
+    width:20%;
+    display: flex;
+    justify-content: end;   
+    align-items: center; 
+    padding-right: 10px; 
+}
+
+.nav-ul{
+    color: white;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;    
+    gap:10px;
+}
+
+.titulo-menu{
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.lista-menu{
+    list-style-type: none;
+}
+
+.box-menu{
+    display: flex;
+    justify-content: start;
+    gap:15px;
+}
+
+.menu-producto{
+    font-weight: 300;
+}
+
+.cantidad{
+    color:#b0b0b0; 
+    font-weight: 100;
+}
+
+.producto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: end;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    padding-bottom: 20px;
+}
+
+img{
+    width: 80%;
+}
+
+.comprar{
+    color: white;
+    text-align: center;
+    padding:5px 0;
+}
+
+.bg-blanco{
+    background-color: white;
+}
+
+.bg-azul{
+    background-color: #184d7c;
+}
+
+.bg-plomo{
+    background-color: #dadada;
+}
+
+
